@@ -1,0 +1,98 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+  --weightRegular: 400;
+  --weightSemiBold: 600;
+  --weightBold: 700;
+  --fontSizeBody: 14px;
+  --paddingS: 16px;
+  --paddingM: 24px;
+  --paddingL: 32px;
+  --paddingXL: 40px;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+* {
+  box-sizing: border-box;
+  font-size: var(--fontSizeBody);
+}
+a:visited,
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+body {
+  font-family: Inter;
+  background-color: var(--grey900);
+  color: var(--white);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  font-weight: var(--weightSemiBold);
+  margin: 0 0 var(--paddingS);
+  font-size: 2rem;
+}
+h2 {
+  color: var(--green);
+  font-weight: var(--weightSemiBold);
+  margin: 0 0 var(--paddingL);
+}
+.card {
+  background-color: var(--grey800);
+  padding: var(--paddingXL);
+  border-radius: 1rem;
+  margin: var(--paddingXL);
+}
+.profile-img-container {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: var(--paddingL);
+}
+.profile-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.baseline {
+  margin: 0 0 var(--paddingM);
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--paddingS);
+}
+.link {
+  width: 100%;
+  padding: var(--paddingS) 0;
+  background-color: var(--grey700);
+  font-weight: var(--weightBold);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.link:active,
+.link:hover {
+  background-color: var(--green);
+  color: var(--grey800);
+}
+.attribution a {
+  text-decoration: underline;
+}
+.attribution a:hover {
+  text-decoration: none;
+}
